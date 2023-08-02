@@ -7,12 +7,11 @@ body {
 
 p {
     font-size: 13px;
-    line-height: 1.5; 
+    line-height: 1.5; /* Setting line-height relative to font size */
     text-align: center;
     background: url(image.jpg) no-repeat center/cover;
     background-attachment: fixed;
-    background-clip: text; 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: rgba(255, 255, 255, 0.062);
+    color: rgba(255, 255, 255, 0.062); /* Fallback color for browsers that don't support background-clip */
     background-size: 100%;
+    background-clip: text; /* Modern browsers that support background-clip */
 }
