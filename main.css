@@ -1,24 +1,20 @@
-/* Add this CSS rule to remove the border */
 body {
-	border:none;
-	outline:none;
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     background: #000;
 }
 
-/* Add this CSS rule to remove the border */
 p {
-	border:none;
-	outline:none;
     font-size: 13px;
     line-height: 1.5; /* Setting line-height relative to font size */
     text-align: center;
     background: url(image.jpg) no-repeat center/cover;
     background-attachment: fixed;
-    background-clip: text; /* Standard property for background clipping */
-    -webkit-background-clip: text; /* Safari compatibility */
-    -webkit-text-fill-color: rgba(255, 255, 255, 0.062);
+    color: rgba(255, 255, 255, 0.062); /* Fallback color for browsers that don't support background-clip */
     background-size: 100%;
+    background-clip: text; /* Modern browsers that support background-clip */
+    -webkit-background-clip: text; /* Safari, Huawei, and Chrome */
+    border: none; /* Remove any border */
+    outline: none; /* Remove any outline */
 }
